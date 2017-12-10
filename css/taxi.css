@@ -1,0 +1,130 @@
+.registr{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    background: #f6f6f6;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.registration{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.registr input{
+    margin-bottom: 20px;
+    height: 30px;
+}
+
+.job__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#map{
+    height: 600px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.conditions{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.advanture{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.advanture-item{
+    width: 20%;
+    color:#9fcdff;
+}
+
+
+@media screen and (max-width:768px) {
+    .advanture-item {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:520px){
+    .advanture-item{
+        width: 100%;
+    }
+}
+
+.mg{
+    margin-top: 30px;
+}
+
+.sign{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.alert{
+    padding-left: 0;
+}
+
+.form-field {
+    width: 100%;
+    height: 30px;
+    padding-left: 10px !important;
+    font-size: 12pt;
+}
+.custom-form {
+    padding: 30px;
+    background-color: #d4d4d4;
+    width: 100%;
+    margin: auto;
+    background-size: cover;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form-field{
+    margin-bottom: 20px;
+    min-width: 100%;
+}
+
+.form-user input{
+    width: 100%;
+}
+
+.custom-forms {
+    padding: 30px;
+    /*background-color: #50ffee;*/
+    width: 100%;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 40px;
+}
+
+.requirements{
+    background-image: url(/img/girl.jpg);
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+}
+
+.text{
+    color:#9fcdff;
+}
+
+

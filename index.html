@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Jarik Taxi</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/taxi.css">
+
+
+
+</head>
+<body>
+
+
+
+<div class="container">
+    <!--<div class="row">-->
+        <!--<div class="col-md-4 offset-8">-->
+
+                <!--<form >-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="email">Email address:</label>-->
+                        <!--<input type="email" class="form-control" id="email">-->
+                    <!--</div>-->
+                    <!--<div class="form-group">-->
+                        <!--<label for="pwd">Password:</label>-->
+                        <!--<input type="password" class="form-control" id="pwd">-->
+                    <!--</div>-->
+                    <!--<div class="checkbox">-->
+                        <!--<label><input type="checkbox"> Remember me</label>-->
+                    <!--</div>-->
+                    <!--<button type="submit" class="btn btn-success">Submit</button>-->
+                <!--</form>-->
+            <!--<div class="alert">-->
+                <!--<button class="btn btn-primary sign" data-toggle="modal" data-target="#myModal">-->
+                        <!--Sign up-->
+                <!--</button>-->
+
+                <!--&lt;!&ndash; Modal &ndash;&gt;-->
+                <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">-->
+                    <!--<div class="modal-dialog">-->
+                        <!--<div class="modal-content">-->
+                            <!--<div class="modal-header">-->
+                                <!--<h4 class="modal-title" id="myModalLabel">check in</h4>-->
+                            <!--</div>-->
+                            <!--<div class="modal-body">-->
+                                <!--<form action="taxi.html" method="get">-->
+                                    <!--<div class="registr">-->
+                                        <!--<input type="text" id="name" placeholder="you name" required>-->
+
+                                        <!--<input type="text" id="lastName" placeholder="you last name" required>-->
+                                        <!--<input type="text" id="mail" placeholder="mail" required>-->
+                                        <!--<input type="text" id="tel" placeholder="you telephone number" required>-->
+                                        <!--<input type="text" id="password" placeholder="password" required>-->
+                                    <!--</div>-->
+                                <!--</form>-->
+
+                            <!--</div>-->
+                            <!--<div class="modal-footer">-->
+                                <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                                <!--<button type="button" class="btn btn-primary">Sign in</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <h2 class="text-center">Щоб викликати машину, заповніть форму або зателефонуйте.</h2>
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+            <div class="form-user">
+                <form id="form-users" class="custom-forms">
+                    <input type="text" name="users-name" id="addres" placeholder="ФИО" required>
+                    <select name="users-city" id="city" class="form-field" required>
+                        <option value="" hidden="" class="option">Выберите город</option>
+                        <option>Киев</option>
+                        <option>Одесса</option>
+                        <option>Харьков</option>
+                        <option>Херсон</option>
+                        <option>Луцьк</option>
+                        <option>Ужгород</option>
+                        <option>Донецьк</option>
+                        <option>Львів</option>
+                        <option>Маріуполь</option>
+                        <option>Запоріжжя</option>
+                    </select>
+                    <input type="text" name="users-street" id="toun" placeholder="Выберите улицу" required>
+                    <input type="text" name="users-phone" id="telephone" placeholder="380..." required>
+                    <button class="btn btn-success" id="mail2">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="map">
+
+</div>
+
+<div class="requirements">
+    <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text">
+                        <h1 class="text-center">Вимоги для водіїв.</h1>
+                    </div>
+                    <div class="conditions">
+                        <div class="advanture">
+                            <div class="advanture-item">
+                                <h5>Автомобиль от 1990 года</h5>
+                                <p>Для работы в Jarik taxi необходим автомобиль в хорошем техническом состоянии от 1990 года выпуска, без царапин и вмятин. Также салон авто должен быть чистым и ухоженным</p>
+                            </div>
+                            <div class="advanture-item">
+                                <h5>Гражданство Украины или вид на жительство</h5>
+                                <p>Водитель должен быть гражданином Украины или иметь документы, которые разрешают ему работать на территории государства</p>
+                            </div>
+                            <div class="advanture-item">
+                                <h5>Водительский стаж от 1 года</h5>
+                                <p>К работе допускаются лица достигшие 19 года, имеющие подходящий автомобиль для работы, и стаж не менее 1 года по категории В</p>
+                            </div>
+                            <div class="advanture-item">
+                                <h5>Смартфон с 3G интернетом</h5>
+                                <p>Для принятия заказов вам понадобится операционная система Android от 4.0.4. или IOS от 8.0. Для работы приложения необходимо бесперебойное соединение с интернетом</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xs-12">
+                <h3 class="text-center text">Якщо хочете працювать заповніть форму і ми з вами зв'яжемось.</h3>
+                <div id="form" class="custom-form">
+                    <h2 style="margin-top: 0; text-align: center;">Анкета водителя</h2>
+                    <form id="form-driver" name="form-driver" action="mail.php">
+                        <p class="form-text">Имя и фамилия</p>
+                        <input type="text" id="formdriver-name" name="name" class="form-field" placeholder="ФИО" required>
+                        <p class="form-text">Телефон</p>
+                        <input type="text" id="formdriver-phone" name="phone" class="form-field" placeholder="380..." required maxlength="16">
+                        <p class="form-text">Город</p>
+                        <select name="city" id="formdriver-city" class="form-field" required>
+                            <option value="" hidden="" class="option">Выберите город</option>
+                            <option>Киев</option>
+                            <option>Одесса</option>
+                            <option>Харьков</option>
+                            <option>Херсон</option>
+                            <option>Луцьк</option>
+                            <option>Ужгород</option>
+                            <option>Донецьк</option>
+                            <option>Львів</option>
+                            <option>Маріуполь</option>
+                            <option>Запоріжжя</option>
+                        </select>
+                        <button name="send_info" class="btn btn-success" id="mail-link">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZghc4__Twfh6ebkO8FowaQ5_i5RPn0lI&callback=initMap"
+        async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="T.js"></script>
+<script src="arr.js"></script>
+</body>
+</html>
